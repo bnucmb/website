@@ -1,0 +1,43 @@
+body {
+    font-family: serif;
+}
+
+h1 {
+    color: #990000;
+}
+
+h2 {
+    color: #990000;
+}
+
+h3 {
+    color: #990000;
+}
+
+nav {
+    border: 1px dashed;
+    width: 180px;
+}
+
+aside {
+    display: none;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: blue;
+}
+
+footer {
+    font-size: 80%
+}
+
+#news, #research, .research_area, .advice {
+    padding: 10px;
+    margin: 5px;
+}
+

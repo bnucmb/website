@@ -1,0 +1,20 @@
+
+#main {
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+#main ul {
+    font-size: 80%;
+}
+
+
+#facilities_image_list li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 30px;
+}
+
+#facilities_image_list img {
+    border: 1px solid;
+}

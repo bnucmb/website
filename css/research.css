@@ -1,0 +1,12 @@
+#main {
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.research_area, .advice  {
+    width: 500px;
+}
+
+.research_area_list {
+    font-weight: bold;
+}

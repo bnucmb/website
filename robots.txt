@@ -1,0 +1,19 @@
+# robots.txt for spiders
+# last modefied by zhouw 2008-02-29
+
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /cmbbs/
+Disallow: /bbs/
+Disallow: /esase/
+Disallow: /moodle/
+Disallow: /zhouw/
+Disallow: *.ppt$
+Disallow: *.pdf$
+Disallow: *.doc$
+Disallow: *.mp3$
+Disallow: *.mp4$
+Disallow: *.avi$
+Disallow: *.rm$
+Disallow: *.rmvb$

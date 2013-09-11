@@ -1,0 +1,22 @@
+#main {
+    margin-left: 200px;
+    margin-bottom: 50px;
+    padding-right: 50px;    
+}
+
+#main ul {
+    font-size: 80%;
+}
+
+#main ul li {
+    margin-top: 20px;
+}
+
+.journal_title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+}

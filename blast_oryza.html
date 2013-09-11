@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0032)http://cmb.bnu.edu.cn/blast.html -->
+<HTML><HEAD><TITLE>Oryza Genome</TITLE>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<STYLE>TD A:hover {
+	BACKGROUND-COLOR: #ffff00
+}
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.7600.16766"></HEAD>
+<BODY style="MARGIN: 0px">
+<TABLE style="MARGIN: 2px auto -50px" cellSpacing=0 cellPadding=0 width=900 
+bgColor=#ffffff align=center>
+  <TBODY>
+  <TR>
+    <TD height="34%" width=883 colSpan=3>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD height="5%" width=883 colSpan=3>
+      <P align=left><B><FONT size=6 
+      face="Arial, Helvetica, sans-serif">&nbsp;
+      Oryza Sequence Similarity Search by BLAST</FONT></B></P></TD></TR>
+  <TR>
+    <TD width=1000 colSpan=3><FONT color=#0000ff 
+      face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </FONT><FONT color=blue size=3 
+      face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD height="1%" width=883 colSpan=3></TD></TR>
+  <FORM encType=multipart/form-data method=post action=/cgi-bin/cmbbs/oryza_blast.cgi>
+  <TR>
+    <TD width=883 colSpan=3 
+      align=left><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT 
+      color=#0000ff face=sans-serif>Either</FONT></B><FONT color=#0000ff 
+      face=sans-serif> Paste sequences in 
+      FASTA</FONT><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B>
+      <P align=center><TEXTAREA style="BORDER-BOTTOM: #000000 1px dotted; BORDER-LEFT: #000000 1px dotted; BORDER-TOP: #000000 1px dotted; BORDER-RIGHT: #000000 1px dotted" rows=15 cols=70 name=seq></TEXTAREA> 
+      .</P>
+      <P><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT 
+      color=#0000ff face=sans-serif>Or</FONT></B><FONT color=#0000ff 
+      face=sans-serif> Upload a file containing one or more FASTA sequences(5M 
+      at most)</FONT></P></TD></TR>
+  <TR>
+    <TD height=29 width=162 align=left>
+      <P align=center><FONT color=#008080></FONT></P></TD>
+    <TD height=29 width=224 align=left>
+      <B><FONT 
+      color=#008080 face=sans-serif>Upload 
+      a File:</FONT></B></TD>
+    <TD height=29 width=521 align=left><INPUT type=file 
+      name=localfile></TD></TR>
+  <TR>
+    <TD height=0% width=162 align=left><FONT color=#008080><B><FONT 
+      face=sans-serif>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></B></FONT></TD>
+    <TD height=0% width=224 align=left><FONT color=#008080><B><FONT 
+      face=sans-serif>Database: </FONT></B></FONT></TD>
+    <TD height=0% width=521><SELECT name=database sieze="1.5"> 
+        <OPTION selected>Oryza_alta</OPTION>
+        <OPTION>Oryza_australiensis</OPTION> <OPTION>Oryza_brachyantha</OPTION>
+        <OPTION>Oryza_coarctata</OPTION> <OPTION>Oryza_glaberrima</OPTION>
+        <OPTION>Oryza_glumipatula</OPTION> <OPTION>Oryza_granulata</OPTION>
+        <OPTION>Oryza_longistaminata</OPTION>
+        <OPTION>Oryza_meridionalis</OPTION> <OPTION>Oryza_minuta</OPTION>
+        <OPTION>Oryza_nivara</OPTION> <OPTION>Oryza_officinalis</OPTION>
+        <OPTION>Oryza_punctata</OPTION> <OPTION>Oryza_ridleyi</OPTION> <OPTION>Oryza_indica</OPTION>
+        <OPTION>Oryza_glaberrima.AGI1.1.12</OPTION>
+        <OPTION>Oryza_rufipogon</OPTION> <OPTION>Oglaberrima</OPTION> <OPTION>Oryza_japonica</OPTION>
+       </SELECT> </TD></TR>
+  <TR>
+    <TD height=0% width=162 align=left><B>
+	<FONT 
+       face=sans-serif color="#008080">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></B></TD>
+    <TD height=0% width=224 align=left><B>
+	<FONT 
+       face=sans-serif color="#008080">Blast 
+      Type:</FONT></B></TD>
+    <TD height=0% width=521><SELECT name=select sieze="1.5"> 
+        <OPTION selected>blastn</OPTION> <OPTION>tblastn</OPTION> 
+        <OPTION>tblastx</OPTION>  
+      </SELECT> </TD></TR>
+  <TR>
+    <TD height=0% width=162 align=left><B><FONT 
+      color=#008080 
+      face=sans-serif>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></B></TD>
+    <TD height=0% width=224 align=left><B><FONT 
+      color=#008080 
+      face=sans-serif>E value:</FONT></B></TD>
+    <TD height=0% width=521><SELECT name=e_value> <OPTION selected 
+        value=0.00001>0.00001</OPTION> <OPTION value=0.0001>0.0001</OPTION> 
+        <OPTION value=0.001>0.001</OPTION> <OPTION value=0.01>0.01</OPTION> 
+        <OPTION value=0.1>0.1</OPTION> <OPTION value=1>1</OPTION> <OPTION 
+        value=10>10</OPTION> <OPTION value=100>100</OPTION></SELECT></TD></TR>
+  <TR>
+    <TD height="1%" width=162></TD>
+    <TD height="1%" width=224>&nbsp;</TD>
+    <TD height="2%" width=521></TD></TR>
+  <TR>
+    <TD height="2%" width=162>&nbsp;</TD>
+    <TD height="2%" width=224>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <INPUT value=submit type=submit></TD>
+    <TD height="1%" width=521>&nbsp;&nbsp;<INPUT value=reset type=reset></TD></TR></FORM>
+  <TR>
+    <TD height="21%" width=162>
+      <P>&nbsp;</P></TD>
+    <TD height="21%" width=738 colSpan=2>
+      &nbsp;</TD></TR></TBODY></TABLE>
+<P>&nbsp;</P></BODY></HTML>
+

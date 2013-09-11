@@ -1,0 +1,34 @@
+
+.students_table {
+    font-size: 80%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.students_table th {
+    text-align: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.students_table th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+.year {
+    width: 60px;
+}
+
+.lab_status {
+    width: 80px;
+}
+
+.name {
+    width: 100px;
+}
+
+caption {
+    text-align: left;
+}

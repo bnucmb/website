@@ -1,0 +1,24 @@
+#main {
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.students_table {
+    border-collapse: collapse;
+    width: 750px;
+}
+
+.students_table th, td {
+    padding-right: 30px;
+    font-size: 80%;
+    border: 1px solid white;
+    text-align: left;   
+}
+
+.students_table th {
+    color: #000066;
+}
+
+.color_line {
+    background: #DDEBFF;
+}

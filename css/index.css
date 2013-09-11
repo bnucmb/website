@@ -1,0 +1,98 @@
+#main {
+    margin-left: 200px;
+    margin-right: 10px;
+}
+
+#cmb_introduction {
+    padding-right: 50px;
+}
+
+#cmb_introduction_first_paragragh:first-letter {
+    font-size: 250%;
+    color: #990000;
+    float: left;
+    margin-right: 3px;
+    padding-top: 1px;
+}
+
+#news, #research, #index_page_image_under_news, #index_page_image_under_research {
+    background-color: #FFE2B9;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 80%;
+}
+
+#news, #research {
+    background: -moz-linear-gradient(top, #FFE2B9, white);
+    background: -webkit-linear-gradient(top, #FFE2B9, white);
+    background: -ms-linear-gradient(top, #FFE2B9, white);
+    padding-bottom: 200px;
+    margin-bottom: -200px;
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#index_page_image_under_news, #index_page_image_under_research {
+    background: -moz-linear-gradient(bottom, #FFE2B9, white);
+    background: -webkit-linear-gradient(bottom, #FFE2B9, white);
+    background: -ms-linear-gradient(bottom, #FFE2B9, white);
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC; 
+    border-radius: 0px 0px 10px 10px;  
+    padding-bottom: 10px; 
+    margin-bottom: 5px;
+}
+
+#news_and_reserach {
+    overflow: hidden;
+}
+
+#news, #index_page_image_under_news {
+    width: 470px;
+    float: left;
+}
+
+#index_page_news_more {
+    text-align: right;
+}
+
+#cmb_member_index  {
+    float: left;
+}
+
+#computer_index {
+    float: right;
+}
+
+#research, #index_page_image_under_research {
+    width: 290px;
+    float: right;
+}
+
+#research ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#research ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: url(../images/go_icon.gif) no-repeat 0px 10px;
+    padding-left: 10px;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.journal_title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.news_title {
+    font-weight: bold;
+}

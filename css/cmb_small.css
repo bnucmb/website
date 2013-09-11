@@ -1,0 +1,54 @@
+body {
+    font-size: 90%;
+}
+
+h1 {
+    font-size: 110%;
+    color: #990000;
+}
+
+h2 {
+    font-size: 100%;
+    color: #990000;
+}
+
+h3 {
+    font-size: 90%;
+    color: #990000;
+}
+
+nav {
+    border: 1px dashed;
+    width: 180px;
+}
+
+nav li{
+    margin-top: 20px;
+}
+
+aside {
+    display: none;
+}
+
+img {
+    display: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+footer {
+    font-size: 80%
+}
+
+#news, #research, .research_area, .advice {
+    border: 1px dashed;
+    padding: 10px;
+    margin: 5px;
+}
+
+li {
+    margin-top: 20px;
+}
+

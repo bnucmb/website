@@ -1,0 +1,21 @@
+#main {
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+#main th {
+    width: 150px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 10px;
+    color: #336633;
+}
+
+#main td {
+    padding-bottom: 10px;
+}
+
+#main img {
+    margin-left: 200px;
+}
