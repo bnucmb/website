@@ -2,13 +2,13 @@
 
 The website for the Laboratory of Computational Molecular Biology at Beijing Normal University.
 
-URL: [http://cmb.bnu.edu.cn/](http://cmb.bnu.edu.cn/)
+URL: http://cmb.bnu.edu.cn/
 
 ### Deployment
 
 Any commits pushed to GitHub will be automatically deployed onto CMB web server.
-- Production branch (prod) will be deployed as [http://cmb.bnu.edu.cn/](http://cmb.bnu.edu.cn/)
-- Development branch (dev) will be deployed as [http://cmb.bnu.edu.cn/dev](http://cmb.bnu.edu.cn/dev)
+- Production branch (prod) will be deployed as http://cmb.bnu.edu.cn/
+- Development branch (dev) will be deployed as http://cmb.bnu.edu.cn/dev
 
 ### Get Started
 
@@ -23,4 +23,4 @@ Finally, make your awesome changes, commit, and push back to GitHub! You will se
 
 ### Questions and Bugs?
 
-Use the CMB mailing list or [create a new issue](issues)!
+Use the CMB mailing list or [create a new issue](../../issues)!
