@@ -33,14 +33,6 @@
             $("#graduate_table").tablesorter({widgets: ['zebra'], headers: { 4:{sorter: false}}});
             $("#undergraduate_table").tablesorter({widgets: ['zebra'], headers: {3:{sorter: false}, 4:{sorter: false}}});
             $("#alumni_table").tablesorter({widgets: ['zebra'], headers: {4:{sorter: false}}});
-            $(".students_table tr").mouseover ( function () {
-                    $(this).addClass("over"); 
-                }
-            );
-            $(".students_table tr").mouseout ( function () {
-                    $(this).removeClass("over"); 
-                }
-            );
         });
     </script>
 </head>
@@ -95,15 +87,7 @@
                     <th>Research</th> 
                 </tr>
             </thead>
-            <tbody>
-                <tr>                    
-                    <td>Yang, Yufei</td>        
-                    <td>2008 - 2013</td>        
-                    <td>Ph.D. Student</td>                  
-                    <td>Dr. Niu</td>                       
-                    <td>Mechanism of intron loss and gain in evolution. </td> 
-                </tr>
-                
+            <tbody>                
                 <tr> 
                     <td>Huang, Weiqi</td>       
                     <td>2009 - 2012</td>        
@@ -126,15 +110,7 @@
                     <td>Ph.D. Student</td>                  
                     <td>Dr. Niu</td>                       
                     <td></td> 
-                </tr>
-                
-                <tr>                    
-                    <td>Tan, Tao</td>           
-                    <td>2010 - 2013</td>        
-                    <td>M.Sc. Student</td>                  
-                    <td>Dr. Lin</td>                       
-                    <td></td> 
-                </tr>
+                </tr>                
                 
                 <tr> 
                     <td><a href="students/zhut.html">Zhu, Tao</a></td>           
@@ -143,15 +119,7 @@
                     <td>Dr. Niu</td>                       
                     <td></td> 
                 </tr>
-                
-                <tr>                    
-                    <td>Li, Xuenan</td>         
-                    <td>2010 - 2013</td>        
-                    <td>M.Sc. Student</td>                  
-                    <td>Dr. Niu</td>                       
-                    <td></td> 
-                </tr>
-                
+                               
                 <tr> 
                     <td>Cao, Huifen</td>        
                     <td>2011 - 2016</td>        
@@ -169,20 +137,28 @@
                 </tr>
                 
                 <tr> 
-                    <td>Ma, Mingyue</td>        
+                    <td>Che, Huanghu</td>       
                     <td>2011 - 2014</td>        
                     <td>M.Sc. Student</td>                  
-                    <td>Dr. Niu</td>                       
+                    <td>Dr. Lin</td>                       
                     <td></td> 
                 </tr>
                 
-                <tr>                    
-                    <td>Tang, Shuai</td>        
-                    <td>2011 - 2014</td>        
-                    <td>M.Sc. Student</td>                  
+                <tr> 
+                    <td>Ma, Mingyue</td>        
+                    <td>2011 - 2016</td>        
+                    <td>Ph.D. Student</td>                  
                     <td>Dr. Niu</td>                       
                     <td></td> 
                 </tr>
+
+                <tr>                    
+                    <td>Liu, Ting</td>          
+                    <td>2012 - 2015</td>        
+                    <td>Ph.D. Student</td>                  
+                    <td>Dr. Lin</td>                       
+                    <td></td> 
+                </tr> 
                 
                 <tr> 
                     <td>Zhang, Yancong</td>     
@@ -214,23 +190,40 @@
                     <td>M.Sc. Student</td>                  
                     <td>Dr. Niu</td>                       
                     <td></td> 
-                </tr>
-                
+                </tr>                
+
+                <tr>                    
+                    <td>Song, Jia</td>       
+                    <td>2013 - 2018</td>        
+                    <td>Ph.D. Student</td>                  
+                    <td>Dr. Lin</td>                       
+                    <td></td> 
+                </tr> 
+
                 <tr> 
-                    <td>Che, Huanghu</td>       
-                    <td>2011 - 2014</td>        
+                    <td>Li, Jiawang</td>     
+                    <td>2013 - 2016</td>        
                     <td>M.Sc. Student</td>                  
                     <td>Dr. Lin</td>                       
                     <td></td> 
                 </tr>
-                
+
                 <tr>                    
-                    <td>Liu, Ting</td>          
-                    <td>2012 - 2015</td>        
-                    <td>Ph.D. Student</td>                  
-                    <td>Dr. Lin</td>                       
+                    <td>Yu, Haoyuan</td>       
+                    <td>2013 - 2016</td>        
+                    <td>M.Sc. Student</td>                  
+                    <td>Dr. Niu</td>                       
                     <td></td> 
-                </tr>        
+                </tr>
+
+                <tr>                    
+                    <td>Zhou, Ting</td>       
+                    <td>2013 - 2016</td>        
+                    <td>M.Sc. Student</td>                  
+                    <td>Dr. Niu</td>                       
+                    <td></td> 
+                </tr>
+                       
             </tbody>
         </table>
         <table class="students_table" id="undergraduate_table">
@@ -246,28 +239,13 @@
             </thead>
             <tbody>
                 <tr>                    
-                    <td>Han, Jun</td>           
-                    <td>2011 - 2012</td>        
+                    <td>Zhang, Bowen</td>           
+                    <td>2013 - 2014</td>        
                     <td>Dr. Lin</td>                       
                     <td>Beijing Normal University</td>                      
                     <td></td> 
-                </tr>
+                </tr>                               
                 
-                <tr> 
-                    <td>Hu, Bo</td>             
-                    <td>2011 - 2012</td>        
-                    <td>Dr. Lin</td>                       
-                    <td>Beijing Normal University</td>                      
-                    <td></td> 
-                </tr>                
-                
-                <tr>                    
-                    <td>Yu, Haoyuan</td>           
-                    <td>2012 - 2013</td>        
-                    <td>Dr. Niu</td>                       
-                    <td>Beijing Normal University</td>                      
-                    <td></td> 
-                </tr>
             </tbody>
         </table>
 
@@ -579,6 +557,39 @@
                     <td>Dr. Lin</td>                       
                     <td><a href="http://bioc.bcc.ac.cn/">Dept of Computational Biology, Beijing Computing Center, Beijing</a></td> 
                 </tr>
+
+                <tr>                    
+                    <td><a href="http://cmb.bnu.edu.cn/teachers/niudk_files/students/Yangyufei.htm">Yang, Yufei</a></td>           
+                    <td>2008 - 2013</td>        
+                    <td>Ph.D.</td>                 
+                    <td>Dr. Niu</td>                       
+                    <td><a href="http://english.genetics.cas.cn/">Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing</a></td> 
+                </tr>
+
+                <tr>                    
+                    <td>Tan, Tao</td>           
+                    <td>2010 - 2013</td>        
+                    <td>M.Sc.</td>                 
+                    <td>Dr. Lin</td>                       
+                    <td><a href="http://www.cncbd.org.cn">China National Center for Biotechnology Development, Beijing</a></td> 
+                </tr>
+
+                <tr>                    
+                    <td><a href="http://cmb.bnu.edu.cn/teachers/niudk_files/students/Lixuenan.htm">Li, Xuenan</a></td>           
+                    <td>2010 - 2013</td>        
+                    <td>M.Sc.</td>                 
+                    <td>Dr. Niu</td>                       
+                    <td><a href="http://bioc.bcc.ac.cn/">Dept of Computational Biology, Beijing Computing Center, Beijing</a></td> 
+                </tr>
+
+                <tr>                    
+                    <td>Tang, Shuai</td>           
+                    <td>2011 - 2013</td>        
+                    <td>M.Sc.</td>                 
+                    <td>Dr. Niu</td>                       
+                    <td><a href="http://www.umd.edu/">University of Maryland, USA</a></td> 
+                </tr>
+
             </tbody>
         </table>
     <img src="images/lab.jpg" id="students_image" />  
