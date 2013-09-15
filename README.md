@@ -2,7 +2,7 @@
 
 The website for the Laboratory of Computational Molecular Biology at Beijing Normal University.
 
-URL: http://cmb.bnu.edu.cn/
+http://cmb.bnu.edu.cn/
 
 ### Deployment
 
