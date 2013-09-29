@@ -20,3 +20,24 @@
     margin-top: 0px;
     text-align: center;
 }
+
+
+.click_year a:link {
+    border-bottom: 1px dashed;
+    color: green;    
+    font-size: 120%;
+}
+
+.click_year a:hover {
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.click_year a:visited {
+    text-decoration: none;
+    color: green;
+    border-bottom: 1px dashed;
+    font-size: 120%;
+}
+
+

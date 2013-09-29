@@ -64,6 +64,10 @@ nav ul li a:hover {
     opacity: 0.5
 }
 
+nav ul li a:visited {
+    text-decoration: none;
+}
+
 aside {
     background-color: #D9DBE0;
     width: 165px;

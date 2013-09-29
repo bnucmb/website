@@ -23,7 +23,30 @@
     <script>
     _uacct = "UA-1045714-1";
     urchinTracker();
-    </script>    
+    </script>
+    <script>
+        window.onload = function(){
+            var targets=document.getElementsByTagName("ul");
+            for (i in targets) {
+                var target_name = !+[1,] ? targets[i].name : targets[i].getAttribute("name");
+                if (target_name == 'previous_list') {
+                    targets[i].style.display="none"; 
+                }                              
+            }
+        }
+    </script>
+    <script>
+        function display(id){
+            var target=document.getElementById(id);
+            if (target.style.display==""){
+                 target.style.display="none";
+
+            }
+            else{
+                 target.style.display="";
+            }
+        }
+    </script>       
 </head>
 <body>
     <article>
@@ -68,281 +91,307 @@
             <h3>Publications</h3>
             <ul>
                 <li>
-                    Yang YF, Zhu T and <span class="author">Niu DK</span> (2013).
-                    Association of intron loss with high mutation rate in Arabidopsis: Implications for genome size evolution.
-                    <span class="journal_title">Genome Biology and Evolution</span>, doi: 10.1093/gbe/evt043.
-                    [<a href="http://gbe.oxfordjournals.org/content/5/4/723">Online PDF</a>]
+                    <p class="click_year"><a href="javascript:void(0)" onclick="display('list_2013_2012')">2013-2012</a></p>
+                    <ul class="paper_list" id="list_2013_2012">
+                        <li>
+                            Yang YF, Zhu T and <span class="author">Niu DK</span> (2013).
+                            Association of intron loss with high mutation rate in Arabidopsis: Implications for genome size evolution.
+                            <span class="journal_title">Genome Biology and Evolution</span>, doi: 10.1093/gbe/evt043.
+                            [<a href="http://gbe.oxfordjournals.org/content/5/4/723">Online PDF</a>]
+                        </li>
+                        <li>
+                            Zhu T and <span class="author">Niu DK</span> (2013). 
+                            Mechanisms of intron loss and gain in the fission yeast Schizosaccharomyces. 
+                            <span class="journal_title">PLOS ONE</span>, doi:10.1371/journal.pone.0061683.
+                            [<a href="http://dx.doi.org/10.1371/journal.pone.0061683">Online PDF</a>]
+                        </li>
+                        <li>
+                            Zhu T and <span class="author">Niu DK</span> (2013). 
+                            Frequency of intron loss correlates with processed pseudogene abundance: 
+                            a novel strategy to test the reverse transcriptase model of intron loss. 
+                            <span class="journal_title">BMC Biology</span>, doi:10.1186/1741-7007-11-23.
+                            [<a href="http://www.biomedcentral.com/1741-7007/11/23">Online PDF</a>]
+                        </li>
+                        <li>
+                            <span class="author">Niu DK</span> and Jiang L (2013). Can ENCODE tell us how much junk DNA we carry in our genome? 
+                            <span class="journal_title">Biochemical and Biophysical Research Communications</span>, doi:10.1016/j.bbrc.2012.12.074.
+                            [<a href="http://www.sciencedirect.com/science/article/pii/S0006291X12024229">Online PDF</a>]
+                        </li>
+                        <li>
+                            Guo, S.G., Zhang, J.G., Sun, H.H.,..., Tan, T., Pang E.L., <span class="author">Lin K.</span>,..., Fei, Z.J. and Xu, Y. (2012)
+                            The draft genome of watermelon (Citrullus lanatus) and resequencing of 20 diverse accessions.
+                            <span class="journal_title">Nature Genetics</span>, doi:10.1038/ng.2470. 
+                            [<a href="http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.2470.html">Online PDF</a>]
+                        </li>
+                        <li>
+                            Zhang, Y. and <span class="author">Lin, K.</span> (2012) 
+                            A phylogenomic analysis of Escherichia coli / Shigella group: implications of genomic 
+                            features associated with pathogenicity and ecological adaptation. 
+                            <span class="journal_title">BMC Evolutionary Biology</span>, doi:10.1186/1471-2148-12-174. 
+                            [<a href="http://www.biomedcentral.com/1471-2148/12/174">Online PDF</a>]
+                        </li>
+                        <li>
+                            Pang, E.L., Tan, T. and <span class="author">Lin, K.</span> (2012)
+                            Promiscuous domains: faci litating stability of the yeast protein-protein interaction network. 
+                            <span class="journal_title">Mol. BioSyst.</span>, doi:10.1039/C1MB05364G. 
+                            [<a href="http://pubs.rsc.org/en/Content/ArticleLanding/2012/MB/c1mb05364g">Online PDF</a>]
+                        </li>
+                    </ul>                    
                 </li>
                 <li>
-                    Zhu T and <span class="author">Niu DK</span> (2013). 
-                    Mechanisms of intron loss and gain in the fission yeast Schizosaccharomyces. 
-                    <span class="journal_title">PLOS ONE</span>, doi:10.1371/journal.pone.0061683.
-                    [<a href="http://dx.doi.org/10.1371/journal.pone.0061683">Online PDF</a>]
+                    <p class="click_year"><a href="javascript:void(0)" onclick="display('list_2011_2010')">2011-2010</a></p>
+                    <ul class="paper_list" name="previous_list" id="list_2011_2010">
+                        <li>
+                            <span class="author">Niu, D.K.</span> and Yang, Y.F. (2011). 
+                            Why eukaryotic cells use introns to enhance gene expression: Splicing reduces transcription-associated 
+                            mutagenesis by inhibiting topoisomerase I cutting activity. 
+                            <span class="journal_title">Biology Direct</span>, 6: 24 doi:10.1186/1745-6150-6-24. 
+                            [<a href="http://www.biology-direct.com/content/6/1/24">Online PDF</a>]
+                        </li>
+                        <li>
+                            Li, Z., Zhang, Z.H., Yan, P.C., Huang, S.W., Fei, Z.j., and <span class="author">Lin, K.</span> (2011) 
+                            RNA-Seq improves annotation of protein-coding genes in the cucumber genome. 
+                            <span class="journal_title">BMC Genomics</span>, doi: 10.1186/1471-2164-12-540 
+                            [<a href="http://www.biomedcentral.com/1471-2164/12/540">Online PDF</a>]
+                        </li>
+                        <li>
+                            Hou, W.R., Li, M. and <span class="author">Niu, D.K.</span> (2011). 
+                            Counting citations in texts rather than reference lists to improve the accuracy of assessing scientific contribution. 
+                            <span class="journal_title">BioEssays</span> 33: 724-727. 
+                            [<a href="http://onlinelibrary.wiley.com/doi/10.1002/bies.201100067/full">Online PDF</a>]
+                        </li>
+                        <li>
+                            Pang, E.L. and <span class="author">Lin, K.</span> (2010) 
+                            Yeast protein–protein interaction binding sites: prediction from the motif–motif, motif–domain and domain–domain levels. 
+                            <span class="journal_title">Molecular BioSystems</span>, doi: 10.1039/C0MB00038H. 
+                            [<a href="http://pubs.rsc.org/en/Content/ArticlePDF/2010/MB/C0MB00038H/2010-08-17?page=Search">Online PDF</a>]
+                        </li>
+                        <li>
+                            <span class="author">Niu DK</span> and Cao JL (2010). 
+                            Nucleosome deposition and DNA methylation may participate in the recognition of premature termination codon in non-sense-mediated mRNA decay. 
+                            <span class="journal_title">FEBS Letters</span>, 584: 3509-3512. 
+                            [<a href="http://cmb.bnu.edu.cn/teachers/niudk_files/publications/FBBS_L2010.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Zhang LY, Yang YF and <span class="author">Niu DK</span> (2010). 
+                            Evaluation of models of the mechanisms underlying intron loss and gain in Aspergillus fungi. 
+                            <span class="journal_title">Journal of Molecular Evolution</span>, doi:10.1007/s00239-010-9391-6. 
+                            [<a href="http://www.springerlink.com/content/a100726k21183642/">Online PDF</a>]
+                        </li>                    
+                    </ul>
                 </li>
                 <li>
-                    Zhu T and <span class="author">Niu DK</span> (2013). 
-                    Frequency of intron loss correlates with processed pseudogene abundance: 
-                    a novel strategy to test the reverse transcriptase model of intron loss. 
-                    <span class="journal_title">BMC Biology</span>, doi:10.1186/1741-7007-11-23.
-                    [<a href="http://www.biomedcentral.com/1741-7007/11/23">Online PDF</a>]
+                    <p class="click_year"><a href="javascript:void(0)" onclick="display('list_2009_2008')">2009-2008</a></p>
+                    <ul class="paper_list" name="previous_list" id="list_2009_2008">
+                        <li>
+                            Fu, C., Li, J. and <span class="author">Wang, E.</span> (2009) 
+                            Signaling network analysis of ubiquitin-mediated proteins suggests correlations between the 26S proteasome and tumor progression. 
+                            <span class="journal_title">Molecular BioSystems</span>, 5: 1809-1816. 
+                            [<a href="http://www.rsc.org/ej/MB/2009/b905382d.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Huang, S.W., Li, R.Q., Zhang, Z.H., Li, L., Gu, X.F., Fan, W., Lucas, W.J., Wang, X.W., Xie, B.Y., Ni, P.X., Ren, Y.Y., Zhu, H.M., 
+                            Li, J., <span class="author">Lin, K.</span>, Jin, W.W., Fei, Z.J., Li, G.C., Stabu, J., Kilian, A., Vossen, E.A., Wu, Y., Guo, J., He, J., Jia, Z.Q., Ren, Y., 
+                            Tian, G., Lu, Y., Ruan, J., Qian, W.B., Wang, M.W., Huang, Q.F., Li, B., Xuan, Z.L., Cao, J.J., Asan, Wu, Z.G., Zhang, J.B., 
+                            Cai, Q.L., Bai, Y.Q., Zhao, B.W., Han, Y.H., Li, Y., Li, X.F., Wang, S.H., Shi, Q.X., Liu, S.Q., Cho, W.K., Kim, J.Y., Xu, Y., 
+                            Uszynska, K.H., Miao, H., Cheng, Z.C., Zhang, S.P., Wu, J., Yang, Y.H., Kang, H.X., Li, M., Liang, H.Q., Ren, X.L., Shi, Z.B., 
+                            Wen, M., Jian, M., Yang, H.L., Zhang, G.J., Yang, Z.T., Chen, R., Liu, S.F., Li, J.W., Ma, L.J., Liu, H., Zhou, Y., Zhao, J., 
+                            Fang, X.D., Li, G.Q., Fang, L., Li, Y.R., Liu, D.Y., Zheng, H.K., Zhang, Y., Qin, N., Li, Z., Yang, G.H., Yang, S., Bolund, L., 
+                            Kristiansen, K., Zheng, H.C., Li, S.C., Zhang, X.Q., Yang, H.M., Wang, J., Sun, R.F., Zhang, B.X., Jiang, S.Z., Wang, J., 
+                            Du, Y.C. and Li, S.G. (2009) 
+                            The genome of the cucumber, Cucumis sativus L. 
+                            <span class="journal_title">Nature Genetics</span>, 41:1275-1281. 
+                            [<a href="http://www.nature.com/ng/journal/v41/n12/pdf/ng.475.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Wu, X.M., Guo, J., Zhang, D.Y. and <span class="author">Lin, K.</span> (2009) 
+                            The properties of hub proteins in a yeast-aggregated cell cycle network and its phase sub-networks. 
+                            <span class="journal_title">Proteomics</span>, 9:4812-4824. 
+                            [<a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/122593415/PDFSTART">Online PDF</a>]
+                        </li>
+                        <li>
+                            Fu, C. and <span class="author">Lin, K.</span> (2009) 
+                            Computational Analysis of miRNA and Target mRNA Interactions: Combined Effects of The Quantity and Quality of Their Binding Sites. 
+                            <span class="journal_title">Progress in Biochemistry and Biophysics</span>, 36(5):608-615. 
+                            [<a href="http://cmb.bnu.edu.cn/files/fulltext_fuc.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Li, N., Lv, J. and <span class="author">Niu, D.K.</span> (2009). 
+                            Low contents of carbon and nitrogen in highly abundant proteins: Evidence of selection for the economy of atomic composition. 
+                            <span class="journal_title">Journal of Molecular Evolution</span>, 68:248-255. 
+                            [<a href="http://www.springerlink.com/content/wj610064mr0232g8/fulltext.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            <span class="author">Lin, K.</span>, Zhang, D.Y. and He, F. (2009) 
+                            Demographic trade-offs in a neutral model explains death rate-abundance rank relationship. 
+                            <span class="journal_title">Ecology</span>, 90(1):31-38. 
+                            [<a href="http://www.esajournals.org/doi/pdf/10.1890/07-2079.1">Online PDF</a>]
+                        </li>
+                        <li>
+                            <span class="author">Niu, D.K.</span> (2008) 
+                            Exon definition as a potential negative force against intron losses in evolution. 
+                            <span class="journal_title">Biology Direct</span>, 3:46. 
+                            [<a href="http://www.biology-direct.com/content/pdf/1745-6150-3-46.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Lv, J., Li, N. and <span class="author">Niu, D.K.</span> (2008) 
+                            Association between the availability of environmental resources and the atomic composition of organismal proteomes: 
+                            Evidence from Prochlorococcus strains living at different depths. 
+                            <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 375:241-246. 
+                            [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4T6T813-3-B&_cdi=6713&_user=1479033&_orig=search&_coverDate=10%2F17%2F2008&_sk=996249997&view=c&wchp=dGLbVlb-zSkWz&md5=ec69d19c8407b828a929999ea86322b8&ie=/sdarticle.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Huang, Y.F. and <span class="author">Niu, D.K.</span> (2008) 
+                            Evidence against the energetic cost hypothesis for the short introns in highly expressed genes. 
+                            <span class="journal_title">BMC Evolutionary Biology</span>, 8:154. 
+                            [<a href="http://www.biomedcentral.com/content/pdf/1471-2148-8-154.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Zhou, H.J. and <span class="author">Lin, K.</span> (2008) 
+                            Excess of microRNAs in large and very 5' biased introns. 
+                            <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 368:709-715. 
+                            [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4RRXN11-6-5&_cdi=6713&_user=1479033&_orig=na&_coverDate=04%2F11%2F2008&_sk=996319996&view=c&wchp=dGLbVzz-zSkzS&md5=1d89b33b393cddbbc5b800bd0bae693a&ie=/sdarticle.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Guo, J., Wu, X.M., Zhang, D.Y. and <span class="author">Lin, K.</span> (2008) 
+                            Genome-wide inference of protein interaction sites: lessons from the yeast high-quality negative protein–protein interaction dataset. 
+                            <span class="journal_title">Nucleic Acids Research</span>, 36(6):2002-2011. 
+                            [<a href="http://nar.oxfordjournals.org/cgi/reprint/36/6/2002">Online PDF</a>]
+                        </li>                        
+                    </ul>
                 </li>
                 <li>
-                    <span class="author">Niu DK</span> and Jiang L (2013). Can ENCODE tell us how much junk DNA we carry in our genome? 
-                    <span class="journal_title">Biochemical and Biophysical Research Communications</span>, doi:10.1016/j.bbrc.2012.12.074.
-                    [<a href="http://www.sciencedirect.com/science/article/pii/S0006291X12024229">Online PDF</a>]
+                    <p class="click_year"><a href="javascript:void(0)" onclick="display('list_2007_2006')">2007-2006</a></p>
+                    <ul class="paper_list" name="previous_list" id="list_2007_2006">
+                        <li>
+                            Luo, Y.Q., Fu, C., Zhang, D.Y. and <span class="author">Lin, K.</span> (2007) 
+                            BPhyOG: An interactive server for genome-wide inference of bacterial phylogenies based on overlapping genes. 
+                            <span class="journal_title">BMC Bioinformatics</span>, 8:266. 
+                            [<a href="http://www.biomedcentral.com/content/pdf/1471-2105-8-266.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Li, S.W., Feng, L. and <span class="author">Niu, D.K.</span> (2007) 
+                            Selection for the miniaturization of highly expressed genes. 
+                            <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 360:586-592. 
+                            [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4P2C7BJ-8-7&_cdi=6713&_user=1479033&_orig=search&_coverDate=08%2F31%2F2007&_sk=996399996&view=c&wchp=dGLzVtb-zSkzV&md5=fb6c723cad3c12c0543ddcc68c817724&ie=/sdarticle.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Wang, H.F., Hou, W.R. and <span class="author">Niu, D.K.</span> (2007) 
+                            Strand compositional asymmetries in vertebrate large genes. 
+                            <span class="journal_title">Molecular Biology Reports</span>, 35:163-169. 
+                            [<a href="http://www.springerlink.com/content/7636470m47226106/fulltext.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            <span class="author">Niu, D.K.</span> (2007) 
+                            Protecting exons from deleterious R-loops: a potential advantage of having introns. 
+                            <span class="journal_title">Biology Direct</span>, 2:11. 
+                            [<a href="http://www.springerlink.com/content/7636470m47226106/fulltext.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Feng, L. and <span class="author">Niu, D.K.</span> (2007) 
+                            Relationship between mRNA stability and length: An old question with a new twist. 
+                            <span class="journal_title">Biochemical Genetics</span>, 45:131-137. 
+                            [<a href="http://www.springerlink.com/content/cjt172p281313g24/fulltext.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Wang, H.F., Feng, L. and <span class="author">Niu, D.K.</span> (2007) 
+                            Relationship between mRNA stability and intron presence. 
+                            <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 354:203-208. 
+                            [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4MR1GV7-D-4&_cdi=6713&_user=1479033&_orig=search&_coverDate=03%2F02%2F2007&_sk=996459998&view=c&wchp=dGLbVtz-zSkzS&md5=427ece79ea0dcb9ce9cd99df0f28216b&ie=/sdarticle.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Wu, X.M., Zhu, L., Guo, J., Fu, C., Zhou, H.J., Dong, D., Li, Z.B., Zhang, D.Y. and <span class="author">Lin, K.</span> (2006) 
+                            SPIDer: Saccharomyces protein-protein interaction database. 
+                            <span class="journal_title">BMC Bioinformatics</span>, 7:S16. 
+                            [<a href="http://www.biomedcentral.com/content/pdf/1471-2105-7-S5-S16.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            Luo, Y.Q., Fu, C., Zhang, D.Y. and <span class="author">Lin, K.</span> (2006) 
+                            Overlapping genes as rare genomic markers: the γ-Proteobacteria phylogeny as a case study. 
+                            <span class="journal_title">Trends in Genetics</span>, 22(11):593-596. 
+                            [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TCY-4KW5W5S-1-2&_cdi=5183&_user=1479033&_orig=search&_coverDate=11%2F30%2F2006&_sk=999779988&view=c&wchp=dGLzVzz-zSkzS&md5=908ed03063b4aa0cc76c1225f4e3ea5b&ie=/sdarticle.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            <span class="author">Lin, K.</span>, Zhu, L. and Zhang, D.Y. (2006) 
+                            An initial strategy for comparing proteins at the domain architecture level. 
+                            <span class="journal_title">Bioinformatics</span>, 22(17):2081-2086. 
+                            [<a href="http://bioinformatics.oxfordjournals.org/cgi/reprint/22/17/2081">Online PDF</a>]
+                        </li>
+                        <li>
+                            Wu, X.M., Zhu, L., Guo, J., Zhang,D.Y. and <span class="author">Lin, K.</span> (2006) 
+                            Prediction of yeast protein–protein interaction network: insights from the Gene Ontology and annotations. 
+                            <span class="journal_title">Nucleic Acids Research</span>, 34(7):2137-2150. 
+                            [<a href="http://nar.oxfordjournals.org/cgi/reprint/34/7/2137">Online PDF</a>]
+                        </li>
+                        <li>
+                            He, Y.W., Xu, M., <span class="author">Lin, K.</span>, Ng, Y.J., Wen, C.M., Wang, L.H., Liu, Z.D., Zhang, H.B., Dong, Y.H., Dow, J.M. and Zhang, L.H. 
+                            (2006) Genome scale analysis of diffusible signal factor regulon in Xanthomonas campestris pv. campestris: 
+                            identification of novel cell-cell communication-dependent genes and functions. 
+                            <span class="journal_title">Molecular Microbiology</span>, 59(2):610-22. 
+                            [<a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/118629810/PDFSTART">Online PDF</a>]
+                        </li>
+                        <li>
+                            Hou, W.R., Wang, H.F. and <span class="author">Niu, D.K.</span> (2006) 
+                            Replication-associated strand asymmetries in vertebrate genomes and implications for replicon size, DNA replication origin and termination. 
+                            <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 344:1258-1262. 
+                            [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4JT3NJ7-9-8&_cdi=6713&_user=1479033&_orig=search&_coverDate=06%2F16%2F2006&_sk=996559995&view=c&wchp=dGLzVlz-zSkzS&md5=c99653df8b2d461a2cdfbf6302c6bac6&ie=/sdarticle.pdf">Online PDF</a>]
+                        </li>                        
+                    </ul>
                 </li>
                 <li>
-                    Guo, S.G., Zhang, J.G., Sun, H.H.,..., Tan, T., Pang E.L., <span class="author">Lin K.</span>,..., Fei, Z.J. and Xu, Y. (2012)
-                    The draft genome of watermelon (Citrullus lanatus) and resequencing of 20 diverse accessions.
-                    <span class="journal_title">Nature Genetics</span>, doi:10.1038/ng.2470. 
-                    [<a href="http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.2470.html">Online PDF</a>]
-                </li>
-                <li>
-                    Zhang, Y. and <span class="author">Lin, K.</span> (2012) 
-                    A phylogenomic analysis of Escherichia coli / Shigella group: implications of genomic 
-                    features associated with pathogenicity and ecological adaptation. 
-                    <span class="journal_title">BMC Evolutionary Biology</span>, doi:10.1186/1471-2148-12-174. 
-                    [<a href="http://www.biomedcentral.com/1471-2148/12/174">Online PDF</a>]
-                </li>
-                <li>
-                    Pang, E.L., Tan, T. and <span class="author">Lin, K.</span> (2012)
-                    Promiscuous domains: faci litating stability of the yeast protein-protein interaction network. 
-                    <span class="journal_title">Mol. BioSyst.</span>, doi:10.1039/C1MB05364G. 
-                    [<a href="http://pubs.rsc.org/en/Content/ArticleLanding/2012/MB/c1mb05364g">Online PDF</a>]
-                </li>
-                <li>
-                    <span class="author">Niu, D.K.</span> and Yang, Y.F. (2011). 
-                    Why eukaryotic cells use introns to enhance gene expression: Splicing reduces transcription-associated 
-                    mutagenesis by inhibiting topoisomerase I cutting activity. 
-                    <span class="journal_title">Biology Direct</span>, 6: 24 doi:10.1186/1745-6150-6-24. 
-                    [<a href="http://www.biology-direct.com/content/6/1/24">Online PDF</a>]
-                </li>
-                <li>
-                    Li, Z., Zhang, Z.H., Yan, P.C., Huang, S.W., Fei, Z.j., and <span class="author">Lin, K.</span> (2011) 
-                    RNA-Seq improves annotation of protein-coding genes in the cucumber genome. 
-                    <span class="journal_title">BMC Genomics</span>, doi: 10.1186/1471-2164-12-540 
-                    [<a href="http://www.biomedcentral.com/1471-2164/12/540">Online PDF</a>]
-                </li>
-                <li>
-                    Hou, W.R., Li, M. and <span class="author">Niu, D.K.</span> (2011). 
-                    Counting citations in texts rather than reference lists to improve the accuracy of assessing scientific contribution. 
-                    <span class="journal_title">BioEssays</span> 33: 724-727. 
-                    [<a href="http://onlinelibrary.wiley.com/doi/10.1002/bies.201100067/full">Online PDF</a>]
-                </li>
-                <li>
-                    Pang, E.L. and <span class="author">Lin, K.</span> (2010) 
-                    Yeast protein–protein interaction binding sites: prediction from the motif–motif, motif–domain and domain–domain levels. 
-                    <span class="journal_title">Molecular BioSystems</span>, doi: 10.1039/C0MB00038H. 
-                    [<a href="http://pubs.rsc.org/en/Content/ArticlePDF/2010/MB/C0MB00038H/2010-08-17?page=Search">Online PDF</a>]
-                </li>
-                <li>
-                    <span class="author">Niu DK</span> and Cao JL (2010). 
-                    Nucleosome deposition and DNA methylation may participate in the recognition of premature termination codon in non-sense-mediated mRNA decay. 
-                    <span class="journal_title">FEBS Letters</span>, 584: 3509-3512. 
-                    [<a href="http://cmb.bnu.edu.cn/teachers/niudk_files/publications/FBBS_L2010.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Zhang LY, Yang YF and <span class="author">Niu DK</span> (2010). 
-                    Evaluation of models of the mechanisms underlying intron loss and gain in Aspergillus fungi. 
-                    <span class="journal_title">Journal of Molecular Evolution</span>, doi:10.1007/s00239-010-9391-6. 
-                    [<a href="http://www.springerlink.com/content/a100726k21183642/">Online PDF</a>]
-                </li>
-                <li>
-                    Fu, C., Li, J. and <span class="author">Wang, E.</span> (2009) 
-                    Signaling network analysis of ubiquitin-mediated proteins suggests correlations between the 26S proteasome and tumor progression. 
-                    <span class="journal_title">Molecular BioSystems</span>, 5: 1809-1816. 
-                    [<a href="http://www.rsc.org/ej/MB/2009/b905382d.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Huang, S.W., Li, R.Q., Zhang, Z.H., Li, L., Gu, X.F., Fan, W., Lucas, W.J., Wang, X.W., Xie, B.Y., Ni, P.X., Ren, Y.Y., Zhu, H.M., 
-                    Li, J., <span class="author">Lin, K.</span>, Jin, W.W., Fei, Z.J., Li, G.C., Stabu, J., Kilian, A., Vossen, E.A., Wu, Y., Guo, J., He, J., Jia, Z.Q., Ren, Y., 
-                    Tian, G., Lu, Y., Ruan, J., Qian, W.B., Wang, M.W., Huang, Q.F., Li, B., Xuan, Z.L., Cao, J.J., Asan, Wu, Z.G., Zhang, J.B., 
-                    Cai, Q.L., Bai, Y.Q., Zhao, B.W., Han, Y.H., Li, Y., Li, X.F., Wang, S.H., Shi, Q.X., Liu, S.Q., Cho, W.K., Kim, J.Y., Xu, Y., 
-                    Uszynska, K.H., Miao, H., Cheng, Z.C., Zhang, S.P., Wu, J., Yang, Y.H., Kang, H.X., Li, M., Liang, H.Q., Ren, X.L., Shi, Z.B., 
-                    Wen, M., Jian, M., Yang, H.L., Zhang, G.J., Yang, Z.T., Chen, R., Liu, S.F., Li, J.W., Ma, L.J., Liu, H., Zhou, Y., Zhao, J., 
-                    Fang, X.D., Li, G.Q., Fang, L., Li, Y.R., Liu, D.Y., Zheng, H.K., Zhang, Y., Qin, N., Li, Z., Yang, G.H., Yang, S., Bolund, L., 
-                    Kristiansen, K., Zheng, H.C., Li, S.C., Zhang, X.Q., Yang, H.M., Wang, J., Sun, R.F., Zhang, B.X., Jiang, S.Z., Wang, J., 
-                    Du, Y.C. and Li, S.G. (2009) 
-                    The genome of the cucumber, Cucumis sativus L. 
-                    <span class="journal_title">Nature Genetics</span>, 41:1275-1281. 
-                    [<a href="http://www.nature.com/ng/journal/v41/n12/pdf/ng.475.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Wu, X.M., Guo, J., Zhang, D.Y. and <span class="author">Lin, K.</span> (2009) 
-                    The properties of hub proteins in a yeast-aggregated cell cycle network and its phase sub-networks. 
-                    <span class="journal_title">Proteomics</span>, 9:4812-4824. 
-                    [<a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/122593415/PDFSTART">Online PDF</a>]
-                </li>
-                <li>
-                    Fu, C. and <span class="author">Lin, K.</span> (2009) 
-                    Computational Analysis of miRNA and Target mRNA Interactions: Combined Effects of The Quantity and Quality of Their Binding Sites. 
-                    <span class="journal_title">Progress in Biochemistry and Biophysics</span>, 36(5):608-615. 
-                    [<a href="http://cmb.bnu.edu.cn/files/fulltext_fuc.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Li, N., Lv, J. and <span class="author">Niu, D.K.</span> (2009). 
-                    Low contents of carbon and nitrogen in highly abundant proteins: Evidence of selection for the economy of atomic composition. 
-                    <span class="journal_title">Journal of Molecular Evolution</span>, 68:248-255. 
-                    [<a href="http://www.springerlink.com/content/wj610064mr0232g8/fulltext.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    <span class="author">Lin, K.</span>, Zhang, D.Y. and He, F. (2009) 
-                    Demographic trade-offs in a neutral model explains death rate-abundance rank relationship. 
-                    <span class="journal_title">Ecology</span>, 90(1):31-38. 
-                    [<a href="http://www.esajournals.org/doi/pdf/10.1890/07-2079.1">Online PDF</a>]
-                </li>
-                <li>
-                    <span class="author">Niu, D.K.</span> (2008) 
-                    Exon definition as a potential negative force against intron losses in evolution. 
-                    <span class="journal_title">Biology Direct</span>, 3:46. 
-                    [<a href="http://www.biology-direct.com/content/pdf/1745-6150-3-46.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Lv, J., Li, N. and <span class="author">Niu, D.K.</span> (2008) 
-                    Association between the availability of environmental resources and the atomic composition of organismal proteomes: 
-                    Evidence from Prochlorococcus strains living at different depths. 
-                    <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 375:241-246. 
-                    [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4T6T813-3-B&_cdi=6713&_user=1479033&_orig=search&_coverDate=10%2F17%2F2008&_sk=996249997&view=c&wchp=dGLbVlb-zSkWz&md5=ec69d19c8407b828a929999ea86322b8&ie=/sdarticle.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Huang, Y.F. and <span class="author">Niu, D.K.</span> (2008) 
-                    Evidence against the energetic cost hypothesis for the short introns in highly expressed genes. 
-                    <span class="journal_title">BMC Evolutionary Biology</span>, 8:154. 
-                    [<a href="http://www.biomedcentral.com/content/pdf/1471-2148-8-154.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Zhou, H.J. and <span class="author">Lin, K.</span> (2008) 
-                    Excess of microRNAs in large and very 5' biased introns. 
-                    <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 368:709-715. 
-                    [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4RRXN11-6-5&_cdi=6713&_user=1479033&_orig=na&_coverDate=04%2F11%2F2008&_sk=996319996&view=c&wchp=dGLbVzz-zSkzS&md5=1d89b33b393cddbbc5b800bd0bae693a&ie=/sdarticle.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Guo, J., Wu, X.M., Zhang, D.Y. and <span class="author">Lin, K.</span> (2008) 
-                    Genome-wide inference of protein interaction sites: lessons from the yeast high-quality negative protein–protein interaction dataset. 
-                    <span class="journal_title">Nucleic Acids Research</span>, 36(6):2002-2011. 
-                    [<a href="http://nar.oxfordjournals.org/cgi/reprint/36/6/2002">Online PDF</a>]
-                </li>
-                <li>
-                    Luo, Y.Q., Fu, C., Zhang, D.Y. and <span class="author">Lin, K.</span> (2007) 
-                    BPhyOG: An interactive server for genome-wide inference of bacterial phylogenies based on overlapping genes. 
-                    <span class="journal_title">BMC Bioinformatics</span>, 8:266. 
-                    [<a href="http://www.biomedcentral.com/content/pdf/1471-2105-8-266.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Li, S.W., Feng, L. and <span class="author">Niu, D.K.</span> (2007) 
-                    Selection for the miniaturization of highly expressed genes. 
-                    <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 360:586-592. 
-                    [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4P2C7BJ-8-7&_cdi=6713&_user=1479033&_orig=search&_coverDate=08%2F31%2F2007&_sk=996399996&view=c&wchp=dGLzVtb-zSkzV&md5=fb6c723cad3c12c0543ddcc68c817724&ie=/sdarticle.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Wang, H.F., Hou, W.R. and <span class="author">Niu, D.K.</span> (2007) 
-                    Strand compositional asymmetries in vertebrate large genes. 
-                    <span class="journal_title">Molecular Biology Reports</span>, 35:163-169. 
-                    [<a href="http://www.springerlink.com/content/7636470m47226106/fulltext.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    <span class="author">Niu, D.K.</span> (2007) 
-                    Protecting exons from deleterious R-loops: a potential advantage of having introns. 
-                    <span class="journal_title">Biology Direct</span>, 2:11. 
-                    [<a href="http://www.springerlink.com/content/7636470m47226106/fulltext.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Feng, L. and <span class="author">Niu, D.K.</span> (2007) 
-                    Relationship between mRNA stability and length: An old question with a new twist. 
-                    <span class="journal_title">Biochemical Genetics</span>, 45:131-137. 
-                    [<a href="http://www.springerlink.com/content/cjt172p281313g24/fulltext.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Wang, H.F., Feng, L. and <span class="author">Niu, D.K.</span> (2007) 
-                    Relationship between mRNA stability and intron presence. 
-                    <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 354:203-208. 
-                    [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4MR1GV7-D-4&_cdi=6713&_user=1479033&_orig=search&_coverDate=03%2F02%2F2007&_sk=996459998&view=c&wchp=dGLbVtz-zSkzS&md5=427ece79ea0dcb9ce9cd99df0f28216b&ie=/sdarticle.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Wu, X.M., Zhu, L., Guo, J., Fu, C., Zhou, H.J., Dong, D., Li, Z.B., Zhang, D.Y. and <span class="author">Lin, K.</span> (2006) 
-                    SPIDer: Saccharomyces protein-protein interaction database. 
-                    <span class="journal_title">BMC Bioinformatics</span>, 7:S16. 
-                    [<a href="http://www.biomedcentral.com/content/pdf/1471-2105-7-S5-S16.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Luo, Y.Q., Fu, C., Zhang, D.Y. and <span class="author">Lin, K.</span> (2006) 
-                    Overlapping genes as rare genomic markers: the γ-Proteobacteria phylogeny as a case study. 
-                    <span class="journal_title">Trends in Genetics</span>, 22(11):593-596. 
-                    [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TCY-4KW5W5S-1-2&_cdi=5183&_user=1479033&_orig=search&_coverDate=11%2F30%2F2006&_sk=999779988&view=c&wchp=dGLzVzz-zSkzS&md5=908ed03063b4aa0cc76c1225f4e3ea5b&ie=/sdarticle.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    <span class="author">Lin, K.</span>, Zhu, L. and Zhang, D.Y. (2006) 
-                    An initial strategy for comparing proteins at the domain architecture level. 
-                    <span class="journal_title">Bioinformatics</span>, 22(17):2081-2086. 
-                    [<a href="http://bioinformatics.oxfordjournals.org/cgi/reprint/22/17/2081">Online PDF</a>]
-                </li>
-                <li>
-                    Wu, X.M., Zhu, L., Guo, J., Zhang,D.Y. and <span class="author">Lin, K.</span> (2006) 
-                    Prediction of yeast protein–protein interaction network: insights from the Gene Ontology and annotations. 
-                    <span class="journal_title">Nucleic Acids Research</span>, 34(7):2137-2150. 
-                    [<a href="http://nar.oxfordjournals.org/cgi/reprint/34/7/2137">Online PDF</a>]
-                </li>
-                <li>
-                    He, Y.W., Xu, M., <span class="author">Lin, K.</span>, Ng, Y.J., Wen, C.M., Wang, L.H., Liu, Z.D., Zhang, H.B., Dong, Y.H., Dow, J.M. and Zhang, L.H. 
-                    (2006) Genome scale analysis of diffusible signal factor regulon in Xanthomonas campestris pv. campestris: 
-                    identification of novel cell-cell communication-dependent genes and functions. 
-                    <span class="journal_title">Molecular Microbiology</span>, 59(2):610-22. 
-                    [<a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/118629810/PDFSTART">Online PDF</a>]
-                </li>
-                <li>
-                    Hou, W.R., Wang, H.F. and <span class="author">Niu, D.K.</span> (2006) 
-                    Replication-associated strand asymmetries in vertebrate genomes and implications for replicon size, DNA replication origin and termination. 
-                    <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 344:1258-1262. 
-                    [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4JT3NJ7-9-8&_cdi=6713&_user=1479033&_orig=search&_coverDate=06%2F16%2F2006&_sk=996559995&view=c&wchp=dGLzVlz-zSkzS&md5=c99653df8b2d461a2cdfbf6302c6bac6&ie=/sdarticle.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    Sun, Q.L., Zhou, H.J., <span class="author">Lin, K.</span> (2005) 
-                    The Evolutionary Relationship of the Domain Architectures in the RhoGEF-containing Proteins. 
-                    <span class="journal_title">Genomics, Proteomics & Bioinformatics</span>, 3:94-106.
-                </li>
-                <li>
-                    <span class="author">Lin, K.</span> and Zhang, D.Y. (2005) 
-                    The excess of 5' introns in eukaryotic genomes. 
-                    <span class="journal_title">Nucleic Acids Research</span>, 33:6522-6527. 
-                    [<a href="http://nar.oxfordjournals.org/cgi/reprint/33/20/6522">Online PDF</a>]
-                </li>
-                <li>
-                    <span class="author">Niu, D.K.</span> (2005) 
-                    Low-level illegitimate transcription of genes may be to silence the genes. 
-                    <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 337:413-414. 
-                    [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4H21FN7-J-1&_cdi=6713&_user=1479033&_orig=search&_coverDate=11%2F18%2F2005&_sk=996629997&view=c&wchp=dGLbVtb-zSkWz&md5=d0dae7f12681d97f318530edaae28381&ie=/sdarticle.pdf">Online PDF</a>]
-                </li>
-                <li>
-                    <span class="author">Niu, D.K.</span>, Hou, W.R. and Li, S.W. (2005) 
-                    mRNA-mediated intron losses: Evidence from extraordinarily large exons. 
-                    <span class="journal_title">Molecular Biology and Evolution</span>, 22:1475-1481. 
-                    [<a href="http://mbe.oxfordjournals.org/cgi/reprint/22/6/1475">Online PDF</a>]
-                </li>
-                <li>
-                    Peng, X., Karuturi, R.K.M., Miller, L.D., <span class="author">Lin, K.</span>, Jia, Y.H., 
-                    Kondu, P., Wang, L., Wong, L.S., Liu, E.T., Balasubramanian, M.K. and Liu, J.H. (2005) 
-                    Identification of Cell Cycle-regulated Genes in Fission Yeast. 
-                    <span class="journal_title">Molecular Biology Cell</span>, 16:1026-1042. 
-                    [<a href="http://www.molbiolcell.org/cgi/reprint/16/3/1026">Online PDF</a>]
-                </li>
-                <li>
-                    Zhang, D.Y., <span class="author">Lin, K.</span> and Hanski, I. (2004) 
-                    Coexistence of cryptic species. 
-                    <span class="journal_title">Ecology Letters</span>, 7:165-169. 
-                    [<a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/118811171/PDFSTART">Online PDF</a>]
-                </li>
-                <li>
-                    Song, L., <span class="author">Niu, D.K.</span>, Lei, L., Ou, D., Gevrey, M., Liu, Y., Hou, G. and Lek, S. (2004) 
-                    Predictive model of algal blooms in Dianchi Lake using artificial neural networks. 
-                    <span class="journal_title">The Japanese Journal of Phycology</span>, 52:S41-S47.
-                </li>
-                <li>
-                    Niu, D.K., <span class="author">Lin, K.</span> and Zhang, D.Y. (2003) 
-                    Strand compositional asymmetries of nuclear DNA in eukaryotes. 
-                    <span class="journal_title">Journal of Molecular Evolution</span>, 57:325-334. 
-                    [<a href="http://www.springerlink.com/content/y31a2hdllufl1kmp/fulltext.pdf">Online PDF</a>] 
+                    <p class="click_year"><a href="javascript:void(0)" onclick="display('list_2005')">2005 and before</a></p>
+                    <ul class="paper_list" name="previous_list" id="list_2005">
+                        <li>
+                            Sun, Q.L., Zhou, H.J., <span class="author">Lin, K.</span> (2005) 
+                            The Evolutionary Relationship of the Domain Architectures in the RhoGEF-containing Proteins. 
+                            <span class="journal_title">Genomics, Proteomics & Bioinformatics</span>, 3:94-106.
+                        </li>
+                        <li>
+                            <span class="author">Lin, K.</span> and Zhang, D.Y. (2005) 
+                            The excess of 5' introns in eukaryotic genomes. 
+                            <span class="journal_title">Nucleic Acids Research</span>, 33:6522-6527. 
+                            [<a href="http://nar.oxfordjournals.org/cgi/reprint/33/20/6522">Online PDF</a>]
+                        </li>
+                        <li>
+                            <span class="author">Niu, D.K.</span> (2005) 
+                            Low-level illegitimate transcription of genes may be to silence the genes. 
+                            <span class="journal_title">Biochemical and Biophysical Research Communications</span>, 337:413-414. 
+                            [<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6WBK-4H21FN7-J-1&_cdi=6713&_user=1479033&_orig=search&_coverDate=11%2F18%2F2005&_sk=996629997&view=c&wchp=dGLbVtb-zSkWz&md5=d0dae7f12681d97f318530edaae28381&ie=/sdarticle.pdf">Online PDF</a>]
+                        </li>
+                        <li>
+                            <span class="author">Niu, D.K.</span>, Hou, W.R. and Li, S.W. (2005) 
+                            mRNA-mediated intron losses: Evidence from extraordinarily large exons. 
+                            <span class="journal_title">Molecular Biology and Evolution</span>, 22:1475-1481. 
+                            [<a href="http://mbe.oxfordjournals.org/cgi/reprint/22/6/1475">Online PDF</a>]
+                        </li>
+                        <li>
+                            Peng, X., Karuturi, R.K.M., Miller, L.D., <span class="author">Lin, K.</span>, Jia, Y.H., 
+                            Kondu, P., Wang, L., Wong, L.S., Liu, E.T., Balasubramanian, M.K. and Liu, J.H. (2005) 
+                            Identification of Cell Cycle-regulated Genes in Fission Yeast. 
+                            <span class="journal_title">Molecular Biology Cell</span>, 16:1026-1042. 
+                            [<a href="http://www.molbiolcell.org/cgi/reprint/16/3/1026">Online PDF</a>]
+                        </li>
+                        <li>
+                            Zhang, D.Y., <span class="author">Lin, K.</span> and Hanski, I. (2004) 
+                            Coexistence of cryptic species. 
+                            <span class="journal_title">Ecology Letters</span>, 7:165-169. 
+                            [<a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/118811171/PDFSTART">Online PDF</a>]
+                        </li>
+                        <li>
+                            Song, L., <span class="author">Niu, D.K.</span>, Lei, L., Ou, D., Gevrey, M., Liu, Y., Hou, G. and Lek, S. (2004) 
+                            Predictive model of algal blooms in Dianchi Lake using artificial neural networks. 
+                            <span class="journal_title">The Japanese Journal of Phycology</span>, 52:S41-S47.
+                        </li>
+                        <li>
+                            Niu, D.K., <span class="author">Lin, K.</span> and Zhang, D.Y. (2003) 
+                            Strand compositional asymmetries of nuclear DNA in eukaryotes. 
+                            <span class="journal_title">Journal of Molecular Evolution</span>, 57:325-334. 
+                            [<a href="http://www.springerlink.com/content/y31a2hdllufl1kmp/fulltext.pdf">Online PDF</a>] 
+                        </li>                    
+                    </ul>
                 </li>
             </ul>
+            
         </div>
         
         <footer>

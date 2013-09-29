@@ -35,9 +35,21 @@
             $("#alumni_table").tablesorter({widgets: ['zebra'], headers: {4:{sorter: false}}});
         });
     </script>
+    <script>
+        function display(id){
+            var target=document.getElementById(id);
+            if (target.style.display==""){
+                 target.style.display="none";
+
+            }
+            else{
+                 target.style.display="";
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body onload="display('alumni_table_body')">
     <article>
     <header>
         <h1>Laboratory of Computational Molecular Biology</h1>
@@ -268,7 +280,7 @@
                 </tr>
             </thead>
             
-            <tbody>
+            <tbody id="alumni_table_body">
                 <tr>                    
                     <td>Dong, Dong</td>         
                     <td>2002 - 2007</td>        
@@ -599,6 +611,7 @@
 
             </tbody>
         </table>
+    <input type="button" onclick="display('alumni_table_body')"  value="show/hidden" />
     <img src="images/lab.jpg" id="students_image" />  
     </div>
     
