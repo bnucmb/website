@@ -57,6 +57,22 @@
 
 #index_page_news_more {
     text-align: right;
+    font-weight: bold;
+}
+
+#index_page_news_more a:link {
+    color: red;
+    text-decoration: none; 
+}
+
+#index_page_news_more a:hover {
+    color: red;
+    text-decoration: underline; 
+}
+
+#index_page_news_more a:visited {
+    color: red;
+    text-decoration: none;
 }
 
 #cmb_member_index  {
