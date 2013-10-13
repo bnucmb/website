@@ -16,7 +16,11 @@ a:link {
     text-decoration: none;
 }
 
-a:hover {
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {   /* note: a:hover must be placed after a:link and a:visited, or it would work wrong in old Internet Explorer !!! */
     text-decoration: underline;
 }
 
@@ -60,12 +64,13 @@ nav ul li a {
 }
 
 
-nav ul li a:hover {
-    opacity: 0.5
-}
-
 nav ul li a:visited {
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    opacity: 0.5    
 }
 
 aside {
@@ -104,7 +109,6 @@ aside ul li {
 aside ul li a {
     color: #000066;
 }
-
 
 footer {
     clear: both;
