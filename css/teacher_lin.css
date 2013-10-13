@@ -1,0 +1,50 @@
+aside {
+    width: 190px;
+}
+
+#Dr_Lin_image_aside {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#main {
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 80%;
+}
+
+h3 {
+    font-size: 200%;
+}
+
+#profile {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#occupation {
+    font-size: 130%;
+}
+
+#main ul {
+    margin-right: 30px;
+    margin-top: -10px;
+}
+
+.author, .book_title {
+    font-weight: bold;
+}
+
+.journal_title {
+    font-style: italic;
+}
+
+#academic_activity_table {
+    border-collapse: collapse;
+    width: 750px;
+}
+
+#academic_activity_table th, td {
+    border: 1px solid;
+}
