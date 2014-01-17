@@ -40,4 +40,16 @@
     font-size: 120%;
 }
 
+.our_author {
+    text-decoration: underline;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.journal_title {
+    font-weight: bold;
+    font-style: italic;
+}
 

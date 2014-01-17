@@ -35,3 +35,7 @@
     color: green;
     border-bottom: 1px dashed;
 }
+
+.our_author {
+    text-decoration: underline;
+}

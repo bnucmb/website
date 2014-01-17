@@ -48,3 +48,7 @@ h3 {
 #academic_activity_table th, td {
     border: 1px solid;
 }
+
+.our_author {
+    text-decoration: underline;
+}
