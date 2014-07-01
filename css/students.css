@@ -69,15 +69,19 @@
 }
 
 .name {
-    width: 120px;
+    width: 110px;
 }
 
-.year, .lab_status {
-    width: 100px;
+.year {
+    width: 80px;
+}
+
+.lab_status {
+    width: 90px;
 }
 
 .supervisor {
-    width: 90px;
+    width: 80px;
 }
 
 .degree {
