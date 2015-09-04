@@ -56,12 +56,12 @@
     color: red;  
 }  
 
-#students_image {
+.students_image {
     margin-top: 20px;
     display: block;
 }
 
-#students_image_131210 {
+.students_image_131210 {
     margin-top: 20px;
     margin-left: 5px;
     display: block;
